@@ -10,7 +10,7 @@ def main():
     while True:
         try:
             message = ""
-            priceList = cg.get_price(ids=["bitcoin", "ethereum", "matic-network", "celo", "ubeswap"], vs_currencies="inr, usd")
+            priceList = cg.get_price(ids=["bitcoin", "ethereum", "matic-network"], vs_currencies="usd")
             for token in priceList:
             
                 symbol = None
